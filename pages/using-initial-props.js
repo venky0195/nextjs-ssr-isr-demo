@@ -5,7 +5,7 @@ function UsingInitialProps({ stars }) {
   UsingInitialProps.getInitialProps = async (ctx) => {
     const res = await fetch('https://api.github.com/repos/vercel/next.js')
     const json = await res.json()
-    console.log("stargazers_count",json.stargazers_count);
+    console.log("stargazers_count...",json.stargazers_count);
     return { stars: json.stargazers_count }
   }
   

@@ -1,5 +1,6 @@
 export default function handler(req, res) {
   console.log("👋 hello")
+  console.log("process.env",process.env)
   res
     .status(200)
     .send({
